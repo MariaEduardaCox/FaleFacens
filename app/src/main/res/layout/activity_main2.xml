@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/botaoSair"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="429dp"
+        android:layout_height="894dp"
+        android:background="@color/corDeFundo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858"
+        tools:context=".SuaAtividade">
+
+        <ImageView
+            android:id="@+id/tituloFacens"
+            android:layout_width="327dp"
+            android:layout_height="183dp"
+            android:layout_above="@+id/botaoReport"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="51dp"
+            android:scaleType="center"
+            android:translationX="0dp"
+            android:translationY="400dp"
+            app:srcCompat="@mipmap/falefacens" />
+
+        <ImageButton
+            android:id="@+id/botaoReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:translationX="0dp"
+            android:translationY="400dp"
+            app:srcCompat="@mipmap/botaogrande" />
+
+        <ImageButton
+            android:id="@+id/botaoContato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/botaoReport"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="120dp"
+            android:translationX="0dp"
+            android:translationY="500dp"
+            app:srcCompat="@mipmap/botaogrande" />
+
+        <ImageView
+            android:id="@+id/textoReport"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_alignStart="@+id/botaoReport"
+            android:layout_alignTop="@+id/botaoReport"
+            android:layout_alignEnd="@+id/botaoReport"
+            android:layout_alignBottom="@+id/botaoReport"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="-154dp"
+            android:translationX="15dp"
+            android:translationY="278dp"
+            app:srcCompat="@mipmap/textoreport" />
+
+        <ImageView
+            android:id="@+id/textoContatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/botaoContato"
+            android:layout_alignTop="@+id/botaoContato"
+            android:layout_alignEnd="@+id/botaoContato"
+            android:layout_alignBottom="@+id/botaoContato"
+            android:layout_marginStart="300dp"
+            android:layout_marginEnd="-230dp"
+            android:layout_marginBottom="-50dp"
+            android:translationX="-265dp"
+            android:translationY="475dp"
+            app:srcCompat="@mipmap/textocontatos" />
+
+        <ImageButton
+            android:id="@+id/botaoSairr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/botaoContato"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="200dp"
+            android:translationX="-40dp"
+            android:translationY="300dp"
+            app:srcCompat="@mipmap/botaosair" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="172dp"
+            android:translationX="100dp"
+            android:translationY="-200dp"
+            app:srcCompat="@mipmap/textodesenvolvido" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
