@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+    <RelativeLayout
+        android:layout_width="429dp"
+        android:layout_height="894dp"
+        android:background="@color/corDeFundo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858"
+        tools:context=".SuaAtividade">
+
+        <ImageView
+            android:id="@+id/caixaMensagem"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginEnd="76dp"
+            android:translationX="-5dp"
+            android:translationY="660dp"
+            app:srcCompat="@mipmap/retangulogrande" />
+
+        <ImageView
+            android:id="@+id/textoMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/caixaMensagem"
+            android:layout_marginBottom="77dp"
+            android:translationX="110dp"
+            android:translationY="735dp"
+            app:srcCompat="@mipmap/mensagem" />
+
+        <TextView
+            android:id="@+id/campoDigitarMsg"
+            android:layout_width="225dp"
+            android:layout_height="122dp"
+            android:layout_alignStart="@+id/caixaMensagem"
+            android:layout_alignEnd="@+id/caixaMensagem"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="18dp"
+            android:text="Digite sua ocorrência..."
+            android:translationY="660dp" />
+
+        <ImageView
+            android:id="@+id/caixaRA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="220dp"
+            android:translationX="125dp"
+            android:translationY="500dp"
+            app:srcCompat="@mipmap/retangulora" />
+
+        <TextView
+            android:id="@+id/caixaRADigitacao"
+            android:layout_width="168dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/caixaRA"
+            android:layout_alignEnd="@+id/caixaRA"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="7dp"
+            android:text="ex: 250846"
+            android:translationX="120dp"
+            android:translationY="500dp" />
+
+        <ImageView
+            android:id="@+id/textoDigiteRa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_toStartOf="@+id/caixaRA"
+            android:translationX="170dp"
+            android:translationY="510dp"
+            app:srcCompat="@mipmap/ra" />
+
+        <ImageView
+            android:id="@+id/caixaNome"
+            android:layout_width="154dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="95dp"
+            android:translationY="440dp"
+            app:srcCompat="@mipmap/retangulora" />
+
+        <TextView
+            android:id="@+id/textoDigiteNome"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/caixaNome"
+            android:layout_alignEnd="@+id/caixaNome"
+            android:layout_marginStart="-2dp"
+            android:layout_marginEnd="4dp"
+            android:text="Maria Eduarda"
+            android:translationY="445dp" />
+
+        <ImageView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="95dp"
+            android:layout_toStartOf="@+id/caixaNome"
+            android:translationX="90dp"
+            android:translationY="449dp"
+            app:srcCompat="@mipmap/nome" />
+
+        <ImageView
+            android:id="@+id/caixaPara"
+            android:layout_width="151dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="105dp"
+            android:translationX="-15dp"
+            android:translationY="385dp"
+            app:srcCompat="@mipmap/retangulora" />
+
+        <ImageView
+            android:id="@+id/imagemAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/caixaPara"
+            android:translationX="-174dp"
+            android:translationY="385dp"
+            app:srcCompat="@mipmap/quadradoazul" />
+
+        <ImageButton
+            android:id="@+id/lupa"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignTop="@+id/imagemAzul"
+            android:layout_alignEnd="@+id/imagemAzul"
+            android:layout_alignBottom="@+id/imagemAzul"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="5dp"
+            android:padding="0dp"
+            android:translationX="100dp"
+            android:translationY="385dp"
+            app:srcCompat="@mipmap/lupa" />
+
+        <ImageView
+            android:id="@+id/textoPara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="111dp"
+            android:layout_toStartOf="@+id/caixaPara"
+            android:translationX="90dp"
+            android:translationY="392dp"
+            app:srcCompat="@mipmap/para" />
+
+        <TextView
+            android:id="@+id/textoDigitePara"
+            android:layout_width="127dp"
+            android:layout_height="32dp"
+            android:layout_alignStart="@+id/caixaPara"
+            android:layout_marginStart="42dp"
+            android:text="Coordenação"
+            android:translationX="-55dp"
+            android:translationY="390dp" />
+
+        <ImageButton
+            android:id="@+id/botaoEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:translationX="270dp"
+            android:translationY="800dp"
+            app:srcCompat="@mipmap/botaoenviar" />
+
+        <ImageView
+            android:id="@+id/textoEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/botaoEnviar"
+            android:layout_alignEnd="@+id/botaoEnviar"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="-33dp"
+            android:translationX="240dp"
+            android:translationY="804dp"
+            app:srcCompat="@mipmap/textoenviar" />
+
+        <ImageView
+            android:id="@+id/tituloContatos"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="138dp"
+            android:translationY="250dp"
+            app:srcCompat="@mipmap/titulocontatos" />
+
+        <ImageView
+            android:id="@+id/textoTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="117dp"
+            android:layout_toStartOf="@+id/linhaTelefone"
+            android:translationX="300dp"
+            android:translationY="580dp"
+            app:srcCompat="@mipmap/telefone" />
+
+        <ImageButton
+            android:id="@+id/linhaTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="188dp"
+            android:translationY="580dp"
+            app:srcCompat="@mipmap/numerotelefone" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
